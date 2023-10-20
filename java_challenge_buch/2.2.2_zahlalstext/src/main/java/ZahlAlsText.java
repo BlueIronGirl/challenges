@@ -9,6 +9,12 @@ public class ZahlAlsText {
         System.out.println(numberAsTextIterativ(234));
     }
 
+    /**
+     * Zahl in Text umwandeln (Rekursiv)
+     *
+     * @param number Zahl
+     * @return Ergebnis
+     */
     static String numberAsTextRekursiv(int number) {
         StringJoiner valueAsText = new StringJoiner(" ");
         final int remainder = number % 10;
@@ -23,6 +29,12 @@ public class ZahlAlsText {
         return valueAsText.toString().trim();
     }
 
+    /**
+     * Zahl in Text umwandeln (Iterativ)
+     *
+     * @param number Zahl
+     * @return Ergebnis
+     */
     static String numberAsTextIterativ(int number) {
         StringBuilder valueAsText = new StringBuilder();
         int remainingValue = number;
@@ -35,6 +47,12 @@ public class ZahlAlsText {
         return valueAsText.toString().trim();
     }
 
+    /**
+     * Umwandlung von Zahl in Text
+     *
+     * @param digit Zahl
+     * @return Ergebnis
+     */
     static String digitAsText(final int digit) {
         return switch (digit) {
             case 1 -> "ONE";
