@@ -12,6 +12,7 @@
         <module>2.2.2_zahlalstext</module>
         <module>2.2.1_grundrechenarten</module>
         <module>2.2.3_vollkommenezahlen</module>
+        <module>2.2.4_primzahlen</module>
     </modules>
 
     <properties>
